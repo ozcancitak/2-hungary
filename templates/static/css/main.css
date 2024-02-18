@@ -269,7 +269,7 @@ body.prevent-scroll {
 }
 
 .ni-1i66k3g {
-	background-color: #ffffff;
+	background-color: #ffffcc;
 	box-shadow: 0 4px 8px rgba(8, 35, 48, 0.24);
 	height: 30px;
 	padding: 0 12px;
@@ -505,7 +505,7 @@ body.prevent-scroll {
 }
 
 .ni-1dbi0fn {
-	background-image: url('https://images.naturalint.com/f_auto,q_auto/v1/production/foundation-entities/uploads/photo/1920x1080-Desktop-BGImage-Slots.20220320132221.jpg');
+	background-image: url('/emplates/img/redpoker.png'); /* The image used */
 	background-repeat: no-repeat;
 	-webkit-background-position: center 0;
 	background-position: center 0;

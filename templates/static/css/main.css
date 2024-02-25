@@ -419,7 +419,7 @@ body.prevent-scroll {
 		-webkit-box-align: center;
 		-ms-flex-align: center;
 		align-items: center;
-		height: 40%;
+		height: 30%;
 		margin-left: 50px;
 	}
 }
@@ -454,7 +454,7 @@ body.prevent-scroll {
 }
 
 .ni-ccsqcm {
-	color: #008df7;
+	color: #000000;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;

@@ -9,8 +9,6 @@
 	<meta name="siteId" content="0"/>
 	<meta name="title" content=""/>
 	<meta name="description" content=""/>
-	<meta name="robots" content="noindex,nofollow, max-image-preview:large"/>
-	<link rel="canonical" href="https://undefinedundefined"/>
 	<meta class="swiftype" name="st:title" data-type="string" content=""/>
 	<meta class="swiftype" name="st:page_type" data-type="enum" content="general"/>
 	<meta class="swiftype" name="st:page_priority" data-type="integer" content="10"/>
@@ -571,7 +569,7 @@
                 width: 100%;
                 background-repeat: no-repeat;
                 background-color: #ffffff;
-                background-image: url(https://images.naturalint.com/f_auto,q_auto/v1/production/rich-text/uploads/photo/DT_1section.20211024113446.png);
+                background-image: none;
             }
 
             @media (max-width: 1025px) {
@@ -612,7 +610,7 @@
                 height: 100%;
                 width: 100%;
                 background-repeat: no-repeat;
-                background-image: url(https://images.naturalint.com/f_auto,q_auto/v1/production/rich-text/uploads/photo/DT_4section.20211024105142.png);
+                background-image: url('/templates/img/Casino.jpg');
             }
 
             @media (max-width: 1025px) {
@@ -959,235 +957,7 @@
             {}
         </script>
 <script type="text/javascript" src="//umbrella.s3.naturalint.com/xsite/ui-components/modules/pages/core-sites-social-responsibility-page/2.4.6/assets/js/_main.js" data-testid="/modules/pages/core-sites-social-responsibility-page/2.4.6/assets/js/_main.js" defer=""></script>
-<script id="eventTrackerAttributes">
-            (function() {
-                if (!window.ni) {
-                    window.ni = {};
-                }
 
-                function getCookieValue(a) {
-                    var b = document.cookie.match(`(^|;)\\s*${a}\\s*=\\s*([^;]+)`);
-                    return b ? b.pop() : '';
-                }
-
-                try {
-                    window.userInfo = JSON.parse(decodeURIComponent(getCookieValue('user_info')));
-                    window.ni_channel_type = window.userInfo.channel;
-                    window.ni_source = window.userInfo.source;
-                } catch {
-                    window.ni_channel_type = 'NA';
-                    window.ni_channel_type = 'NA';
-                    window.ni_source = 'NA';
-                }
-
-                window.ni_platform = 'xsite';
-                window._cms_site = false;
-
-                var unprocessedEventQueue = [];
-                var isUtagManagerLoaded = false;
-
-                window.ni.postTagManagerLoaded = function postTagManagerLoaded() {
-                    try {
-                        isUtagManagerLoaded = true;
-
-                        if (unprocessedEventQueue.length > 0) {
-                            for (const event of unprocessedEventQueue) {
-                                document.dispatchEvent(event);
-                            }
-
-                            unprocessedEventQueue = [];
-                        }
-                    } catch (error) {
-                        console.error('postTagManagerLoaded error::', error);
-                    }
-                }
-                ;
-
-                function trackEvent(eventObject) {
-                    if (document.location.hostname.includes('localhost')) {
-                        console.info('trackEvent:', eventObject);
-                    }
-
-                    var eventArr = ['_trackEvent', eventObject.category, eventObject.action, eventObject.optLabel || '', eventObject.optValue || 0, eventObject.optNonInteraction || false, ];
-
-                    var g = window._gaq || (window._gaq = []);
-                    g.push(eventArr);
-
-                    var evt = document.createEvent('Event');
-                    evt.initEvent('trackEvent', true, false);
-                    evt.detail = eventArr;
-                    document.dispatchEvent(evt);
-
-                    if (!isUtagManagerLoaded) {
-                        unprocessedEventQueue.push(evt);
-                    }
-                }
-
-                function trackLink(eventObject) {
-                    return function(e) {
-                        var el = e.target;
-                        var href = el.attr('href');
-                        var target = el.attr('target');
-                        var evObject = el.isFunction(eventObject) ? eventObject(el) : eventObject;
-
-                        trackEvent(evObject);
-
-                        if (!e.defaultPrevented && href && target !== '_blank') {
-                            e.preventDefault();
-
-                            setTimeout(()=>{
-                                window.location.href = href;
-                            }
-                            , 0);
-                        }
-                    }
-                    ;
-                }
-
-                function trackComponent(eventObject) {
-                    var evt = document.createEvent('Event');
-                    evt.initEvent('trackComponent', true, false);
-                    evt.detail = eventObject;
-                    document.dispatchEvent(evt);
-
-                    if (!isUtagManagerLoaded) {
-                        unprocessedEventQueue.push(evt);
-                    }
-                }
-
-                function trackFormSubmit(eventObject) {
-                    if (document.location.hostname.includes('localhost')) {
-                        console.info('trackFormSubmit:', eventObject);
-                    }
-
-                    var eventArr = ['_trackFormSubmit', eventObject.isFormSubmitted];
-
-                    var evt = document.createEvent('Event');
-                    evt.initEvent('trackFormSubmit', true, false);
-                    evt.detail = eventArr;
-                    document.dispatchEvent(evt);
-
-                    if (!isUtagManagerLoaded) {
-                        unprocessedEventQueue.push(evt);
-                    }
-                }
-
-                function trackQ10reStepResponse(eventObject) {
-                    var evt = document.createEvent('Event');
-                    evt.initEvent('questionnaireStepResponse', true, false);
-                    evt.detail = eventObject;
-                    document.dispatchEvent(evt);
-
-                    if (!isUtagManagerLoaded) {
-                        unprocessedEventQueue.push(evt);
-                    }
-                }
-
-                function trackQ10reStepShow(eventObject) {
-                    var evt = document.createEvent('Event');
-                    evt.initEvent('questionnaireStepShow', true, false);
-                    evt.detail = eventObject;
-                    document.dispatchEvent(evt);
-
-                    if (!isUtagManagerLoaded) {
-                        unprocessedEventQueue.push(evt);
-                    }
-                }
-
-                function trackShowMore(eventObject) {
-                    if (document.location.hostname.includes('localhost')) {
-                        console.info('trackShowMore:', eventObject);
-                    }
-
-                    var eventArr = ['_trackShowMore', eventObject.comp_iid, eventObject.action, eventObject.product_list_size, ];
-
-                    var g = window._gaq || (window._gaq = []);
-                    g.push(eventArr);
-
-                    var evt = document.createEvent('Event');
-                    evt.initEvent('trackShowMore', true, false);
-                    evt.detail = eventArr;
-                    document.dispatchEvent(evt);
-
-                    if (!isUtagManagerLoaded) {
-                        unprocessedEventQueue.push(evt);
-                    }
-                }
-
-                /** @typedef {Object} TrackEvent
-   * @param {String} category category name
-   * @param {String} action action name
-   * @param {String} optLabel label
-   * @param {String} optValue value
-   * @param {Boolean} optNonInteraction no user interaction
-   */
-
-                window.ni.uiEvents = {
-                    /**
-     * @param  {TrackEvent} eventObject
-     */
-                    trackEvent: trackEvent,
-                    trackLink: trackLink,
-                    trackShowMore: trackShowMore,
-                    trackFormSubmit: trackFormSubmit,
-                    trackComponent: trackComponent,
-                    trackQ10reStepResponse: trackQ10reStepResponse,
-                    trackQ10reStepShow: trackQ10reStepShow,
-                };
-
-                var console = (window.console = window.console || {});
-                var noop = function() {};
-
-                var methods = ['assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error', 'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log', 'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd', 'timeStamp', 'trace', 'warn', ].map((method)=>{
-                    return console[method] ? method : noop;
-                }
-                );
-
-                window.__nisiteid = '130';
-
-                window.ni_server_side_impression_id = 'wPmNOpFdW3MpNf602lr7';
-                window.ni_server_side_user_id = 'QnzeNBVcB6W050494srk';
-                window.eventTrackerAttributes = {
-                    userParams: {
-                        segmentId: '',
-                        sv: '',
-                        verticalId: '',
-                        verticalBusinessType: 'monetised',
-                        vv: '',
-                        pageTypeId: '5e0dcb9f7fac3dd18d595b7f',
-                        pageTypeName: 'general',
-                        data_pagetype: '',
-                        pv: '5e92d81ee22412a776d0cc27',
-                        pageTypeSegmentId: '',
-                        ptsv: '',
-                        has_vertical: `false`,
-                        pageStatusCode: `200`,
-                        utm_source: window.ni_source,
-                        kw: '',
-                        ts: '',
-                        topic: '',
-                        _country: 'DE',
-                        _city: 'Frankfurt am Main',
-                        _region: 'HE',
-                        _language: window.navigator.language || window.navigator.userLanguage,
-                        _scr_h: window.screen.availHeight,
-                        _scr_w: window.screen.availWidth,
-                        isPOC: 0,
-                        _platform: 'desktop',
-                        _os: 'Mac OS X:10.15.7',
-                        _browser: 'Chrome:120.0.0',
-                        _siteid: '130',
-                        _isod: '2024-01-13',
-                    },
-                };
-                window.__ctm_cvars = window.__ctm_cvars || [];
-                window.__ctm_cvars.push({
-                    iid: window.ni_server_side_impression_id,
-                    tok: '9fa6438f54740111583d5cc30e82ee70',
-                });
-            }
-            )(document, window);
-        </script>
 <script type="text/javascript" id="tealium" data-testid="tealium-script-tag">
             var naturalint_tag_data = {
                 "site_name": "Casino Hungary",
@@ -1205,7 +975,7 @@
                 "ni_relaible_site_ft": ""
             };
             (function(a, b, c, d) {
-                a = "https://tags.tiqcdn.com/utag/natural-intelligence/casino-slots-uk/prod/utag.js";
+                a = "";
                 b = document;
                 c = "script";
                 d = b.createElement(c);
